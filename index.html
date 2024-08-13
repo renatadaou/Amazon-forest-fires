@@ -1,0 +1,315 @@
+<style>
+  body {
+      margin: 0;
+      font-size: 20px;
+      font-family: 'Lora', Georgia, serif;
+      text-rendering: optimizeLegibility;
+      background-color: #e8f5e9; /* Light green background */
+      color: #333;
+  }
+
+  .content {
+      max-width: 640px;
+      margin: auto;
+      padding: 0 1em;
+  }
+
+  .header {
+      padding: 3em 0;
+      text-align: center;
+      background-color: #c8e6c9; /* Soft green header background */
+      border-bottom: 5px solid #81c784; /* Slightly darker green border */
+  }
+
+  a {
+      color: #388e3c; /* Dark green link color */
+      text-decoration: none;
+      font-weight: bold;
+  }
+
+  a:hover {
+      text-decoration: underline;
+  }
+
+  .footer {
+      background: #a5d6a7; /* Soft green footer background */
+      text-align: center;
+      font-size: 0.8em;
+      margin-top: 4em;
+      padding: 2em 0;
+      border-top: 5px solid #81c784; /* Matching border to header */
+  }
+
+  figure {
+      margin: 0;
+      padding-bottom: 1.2em;
+  }
+
+  figcaption {
+      font-size: 0.8em;
+      text-align: center;
+      margin-top: 0.5em;
+      color: #666;
+  }
+
+  h1 {
+      font-family: 'Lora', Georgia, serif;
+      font-weight: bold;
+      font-size: 2.5em;
+      line-height: 1.2;
+      color: #2e7d32; /* Dark green heading */
+  }
+
+  .subhead {
+      font-family: 'Lora', Georgia, serif;
+      font-style: italic;
+      color: #4caf50; /* Mid-tone green subheading */
+  }
+
+  iframe,
+  img,
+  video {
+      max-width: 100%;
+      border-radius: 8px; /* Rounded corners for media elements */
+  }
+
+  p {
+      line-height: 1.6;
+      margin: 0;
+      padding-bottom: 1.2em;
+  }
+
+  ul {
+      margin: 0;
+      padding-bottom: 1em;
+      line-height: 1.6;
+  }
+
+  iframe {
+      padding-bottom: 1.2em;
+  }
+
+  code {
+      font-family: 'Courier New', monospace;
+      background: #c5e1a5; /* Light green background for code */
+      padding: 2px 4px;
+      border-radius: 4px;
+  }
+  .graphics-container {
+    display: flex;
+    justify-content: space-between; /* Side by side alignment */
+    gap: 1em; /* Space between the images */
+}
+
+.single-graphic {
+    flex: 1; /* Ensure both graphics take up equal space */
+    text-align: center; /* Center the caption */
+}
+
+.single-graphic img {
+    width: 100%;
+    height: 300px; /* Set a fixed height */
+    object-fit: cover; /* Ensure the image scales properly to fill the height */
+    border-radius: 8px; /* Optional: Rounded corners for the images */
+}
+
+  /* Margin on mobile */
+  @media (max-width: 640px) {
+      body {
+          font-size: 18px;
+      }
+      .graphics-container {
+        flex-direction: column; /* Stack the images vertically on small screens */
+        gap: 1.5em; /* Space between stacked images */
+    }
+    
+    .single-graphic img {
+        height: auto; /* Allow height to adjust for smaller screens */
+    }
+
+      .content {
+          padding-left: 0.5em;
+          padding-right: 0.5em;
+      }
+
+      h1 {
+          font-size: 2em;
+      }
+     
+  }
+</style>
+<link href="scrolly-styles.css" rel="stylesheet">
+<script src="https://unpkg.com/intersection-observer@0.5.1/intersection-observer.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/scrollama/3.2.0/scrollama.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.3.0/d3.min.js"></script>
+</head>
+
+<body>
+
+<div class="content">
+  <div class="header">
+      <h1> Fires Surge from Farmlands, Threatening Amazon's Native Forests </h1>
+      <p class="subhead">Intensified Agricultural Burning Pushes Devastating Fires into Untouched Forests, Worsening Environmental Crisis</p>
+  </div>
+</div>
+
+<div class="content">
+  <div class="byline">
+      <p>By <a href="https://renatadaou.github.io/">Renata Daou</a></p>
+      <p><a href="https://renatadaou.github.io/">Methodology </a></p>
+  </div>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+      magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+      consequat.</p>
+    <p>You can change the fonts by using <a href="https://fonts.google.com/">Google Fonts</a> and some CSS. Right now
+      we're using Lora for headlines and Georgia for body copy.</a></p>
+    <p>You will need <code><a href="scrolly-styles.css">scrolly-styles.css</a></code> for the page to work for you.</p>
+    <p>Remove <code>debug: true</code> from the code near the bottom of the page to make the black lines go away, and
+      <strong>make sure you change the background color of the overlays</strong>. Otherwise I will go crazy.</p>
+  </div>
+  <section id="scrolly-images" class="scrolly-container">
+    <div class="sticky-thing">
+      <img src="gif.gif">
+    </div>
+    <div class="steps-container">
+      <div class="step" id="step1">
+        <div>
+          <p>Step one, adjust the CSS at the bottom of this page to change spacing between steps.</p>
+          <p>Here is some more text, in case there are multiple paragraphs.</p>
+        </div>
+      </div>
+      <div class="step" id="step2">
+        <p>Find the JavaScript code near the bottom to associate each step with an image change.</p>
+      </div>
+      <div class="step" id="step3">
+        <p>By default, the steps are a set width and the text is left-centered. Find the rule in
+          <code>scrolly-styles.css</code> that refers to <code>.step > *</code> to adjust or remove the width, center
+          the text, or change the background color/opacity.</p>
+      </div>
+      <div class="step" id="step4">
+        <p>Step four, lorem ipsum dolor sic amet.</p>
+      </div>
+      <div class="step" id="step5">
+        <p>Step five, lorem ipsum dolor sic amet.</p>
+      </div>
+    </div>
+  </section>
+  <div class="graphics-container">
+    <div class="single-graphic">
+        <img src="dorocheia.jpeg">
+        <figcaption>Pictures taken by Tiara throughout the trip</figcaption>
+    </div>
+    <div class="single-graphic">
+        <img src="doro_seca3.jpeg">
+        <figcaption>Pictures taken by Tiara throughout the trip</figcaption>
+    </div>
+   
+</div>
+  <div class="content">
+    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem
+      aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo
+      enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui
+      ratione voluptatem sequi nesciunt.</p>
+    <figure>
+      <img
+        src="https://static01.nyt.com/images/2024/02/01/multimedia/01eu-hungary-orban-2-ghkw/01eu-hungary-orban-2-ghkw-superJumbo.jpg?quality=75&auto=webp">
+      <figcaption>This is an image caption</figcaption>
+    </figure>
+    <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non
+      numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima
+      veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?
+    </p>
+  </div>
+  <div class="full-width">
+    <figure>
+      <img
+        src="https://static01.nyt.com/images/2024/02/01/multimedia/01eu-hungary-orban-2-ghkw/01eu-hungary-orban-2-ghkw-superJumbo.jpg?quality=75&auto=webp">
+      <figcaption>This is another image caption, but this time it's a full-width image</figcaption>
+    </figure>
+  </div>
+  <div class="content">
+    <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque
+      corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa
+      qui officia deserunt mollitia animi, id est laborum et dolorum fuga.</p>
+    <p>Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio
+      cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor
+      repellendus.</p>
+  </div>
+  <div class="footer">
+    <div class="content">
+      <p>You can find the code for this template <a href="https://github.com/jsoma/page-templates/">here</a>. Delete
+        these lines
+        when you use it, and don't forget to change the <code>title</code> tag!!!</p>
+    </div>
+  </div>
+
+  <script>
+    /*************
+    
+    This is the JavaScript that makes the scrolly work 
+    
+    *************/
+
+    /* 
+    This part attaches a scroll to the element with id="scrolly-images"    
+    */
+    (() => {
+      const scroller = scrollama()
+
+      scroller
+        .setup({
+          parent: document.querySelector("#scrolly-images"),
+          step: ".step",
+          offset: 0.6,
+        })
+        .onStepEnter(function ({ element, index, direction }) {
+          const event = new CustomEvent("stepin", { detail: { direction: direction } })
+          element.dispatchEvent(event)
+        })
+        .onStepExit(function ({ element, index, direction }) {
+          const event = new CustomEvent("stepout", { detail: { direction: direction } })
+          if (direction === "up" && element.previousElementSibling) {
+            const event = new CustomEvent("stepin", { detail: { direction: direction } })
+            element.previousElementSibling.dispatchEvent(event)
+          }
+        })
+
+      window.addEventListener("resize", scroller.resize)
+    })()
+
+    /*
+    This part sets up your actions. In this case, it's changing the image in the scrolly container.
+    */
+   /*
+  No need to change the GIF source, it will stay the same across all steps
+  */
+  d3.select("#step1").on('stepin', (e) => {
+    // No action needed, GIF remains the same
+  })
+
+  d3.select("#step2").on('stepin', (e) => {
+    // No action needed, GIF remains the same
+  })
+
+  d3.select("#step3").on('stepin', (e) => {
+    // No action needed, GIF remains the same
+  })
+
+  d3.select("#step4").on('stepin', (e) => {
+    // No action needed, GIF remains the same
+  })
+
+  d3.select("#step5").on('stepin', (e) => {
+    // No action needed, GIF remains the same
+  })
+  </script>
+  <style>
+    /* Change this to adjust the padding between steps */
+    .step {
+      margin-bottom: 70vh;
+    }
+  </style>
+
+</body>
+
+</html>
