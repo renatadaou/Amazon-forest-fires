@@ -1,10 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Amazon Fires</title>
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
 <style>
   body {
       margin: 0;
       font-size: 20px;
       font-family: 'Lora', Georgia, serif;
       text-rendering: optimizeLegibility;
-      background-color: #e8f5e9; /* Light green background */
+      background-color: #ebf5ec; /* Light green background */
       color: #333;
   }
 
@@ -100,7 +114,15 @@
     justify-content: space-between; /* Side by side alignment */
     gap: 1em; /* Space between the images */
 }
-
+.graphics-container2 {
+  display: flex;
+  justify-content: space-between; /* Side by side alignment */
+  gap: 1em; /* Space between the items */
+  width: 100vw; /* Occupies the full viewport width */
+  box-sizing: border-box; /* Includes padding and border in the element's total width and height */
+  margin: 0; /* Remove any default margin */
+  padding: 0; /* Remove any default padding */
+}
 .single-graphic {
     flex: 1; /* Ensure both graphics take up equal space */
     text-align: center; /* Center the caption */
@@ -111,6 +133,22 @@
     height: 300px; /* Set a fixed height */
     object-fit: cover; /* Ensure the image scales properly to fill the height */
     border-radius: 8px; /* Optional: Rounded corners for the images */
+}
+
+.single-graphic2 {
+  flex: 1; /* Ensure both graphics take up equal space */
+  text-align: center; /* Center the caption */
+  display: flex; /* Use flexbox to center content */
+  justify-content: center; /* Center the image horizontally */
+  align-items: center; /* Center the image vertically if needed */
+}
+
+.single-graphic2 img {
+  width: auto; /* Maintain the aspect ratio */
+  height: 100%; /* Make the height fill the container */
+  max-height: 300px; /* Set a maximum height to control size */
+  object-fit: contain; /* Ensure the image scales without cropping */
+  border-radius: 8px; /* Optional: Rounded corners for the images */
 }
 
   /* Margin on mobile */
@@ -156,17 +194,69 @@
 <div class="content">
   <div class="byline">
       <p>By <a href="https://renatadaou.github.io/">Renata Daou</a></p>
-      <p><a href="https://renatadaou.github.io/">Methodology </a></p>
+      <p><a href="https://renatadaou.github.io/method-forest-fires/">Methodology </a></p>
   </div>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-      magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-      consequat.</p>
-    <p>You can change the fonts by using <a href="https://fonts.google.com/">Google Fonts</a> and some CSS. Right now
-      we're using Lora for headlines and Georgia for body copy.</a></p>
-    <p>You will need <code><a href="scrolly-styles.css">scrolly-styles.css</a></code> for the page to work for you.</p>
-    <p>Remove <code>debug: true</code> from the code near the bottom of the page to make the black lines go away, and
-      <strong>make sure you change the background color of the overlays</strong>. Otherwise I will go crazy.</p>
-  </div>
+
+<p>MANAUS, BRAZIL — In October 2023, Manaus, the capital city of Amazonas, was engulfed in a dense fog that caught residents by surprise. The atmosphere was filled with thick, grayish smoke and the pervasive smell of burning wood.</p>
+
+<p>“I felt like I would suffocate to death at any second,” said Livia Monteiro, a law student at the Federal University of Amazonas. “It was horrible.”</p>
+
+<p>It was a confusing development. That same year, deforestation in the Amazon Rainforest region declined by more than half, marking a victory for environmentalists with significant implications for efforts to combat climate change. The Amazon generates approximately 20% of the Earth's oxygen and absorbs about a quarter of its CO2.</p>
+
+<p>A closer look at the data shows a more worrying picture. In 2023, while deforestation rates officially declined, the areas of native forests affected by fires surged, particularly in the state of Amazonas. There, about 90% of the forest remains intact but is increasingly threatened by deforestation driven by cattle farming and agriculture. Many farmers resort to setting fires to clear the land, a cheaper and quicker method than logging or clear cutting. Although these fires are illegal during the dry months, to prevent them from spreading into untouched forest areas, they have increased significantly. Fires often start when farmers clear land but can spread beyond the intended area due to poor fire control. Longer, drier summers make these fires worse.</p>
+
+<p>Forest fires, which are included in deforestation statistics, have surged, even as other forms of deforestation such as clear-cutting, cutting down vegetation and then burning, increased erosion, mining, and drilling have declined. In 2023, the amount of native forests damaged by fires tripled. This rise in fire-related destruction suggests that the environmental impact on the Amazon Rainforest has shifted into a new phase. The surge in fires highlights a growing threat to this critical ecosystem, even as traditional methods of forest clearing decline.</p>
+
+<p>Forest fires have severe consequences for local communities: diminished air quality, increased aridity, higher temperatures, and reduced water levels in nearby rivers. These changes disrupt economic activities dependent on the river and severely impact riverside communities that rely on it for their livelihoods. The historic drought in the Amazon River basin has brought river volumes down to their lowest levels in over 120 years of recorded measurements, according to the Ministry of Science. Vania Lima, who had worked in a floating river restaurant for 19 years, found herself without work or income for three months because the river became too dry to reach the restaurant by boat.</p>
+
+<p>“We cry because it makes us very sad, the river,” she said. “Those of us who work here cry because we depend on it.”</p>
+
+<p>This becomes a destructive cycle: Rising temperatures in the Amazon can cause rivers to lose water, making the soil drier and more prone to fires. These fires, in turn, raise the temperatures even more and release carbon, which contributes to climate change. Each issue makes the others worse, leading to more damage in the rainforest.</p>
+
+<p>In September 2023, the number of fire hotspots in these native forests more than tripled compared to the same month in 2022. The number of hotspots grew by approximately 3.53 times compared to the previous year.</p>
+
+  <iframe title="From July to October 2023, the Number of Hotspots of Forest Fires Grew in Primary Forest Areas" aria-label="Column Chart" id="datawrapper-chart-cLRn6" src="https://datawrapper.dwcdn.net/cLRn6/2/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="503" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
+  </script>
+
+<p>To combat the problem, firefighting efforts face significant logistical challenges: no roads connect the towns, boat travel is slow and flying is too expensive and impractical due to the lack of landing spaces. As a result, addressing the issue of farmers illegally burning native forests for cattle remains a difficult task.
+</p>
+
+<h2>Forest Fires and Drought</h2>
+
+<p>Last October, a thick fog engulfed Manaus, visible from every corner. This fog, caused by intense forest fires, led to the city having some of the worst air quality in the world, according to the World Air Quality Index, an index from IQAir, a platform that shows real-time air quality information.</p>
+
+<p>“They canceled classes at the university during this period because it was impossible to leave the house with the amount of fog,” Monteiro said. “It was also not recommended that we exercise outside and we had to wear masks.”</p>
+
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/cjfmnJ3atk8?si=kOSG75D1pqAao-2C" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+<p>In 2023, deforestation in the Amazon, including activities such as cutting trees and forest fires, was almost been cut in half. </p>
+    
+  <iframe title="Deforestation in the Amazon Decreased by Over Half in 2023" aria-label="Column Chart" id="datawrapper-chart-C7BJ1" src="https://datawrapper.dwcdn.net/C7BJ1/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="455" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
+  </script>
+
+<p>But the number of all forest fires remains high. In 2022, there were more forest fires than in any other recent year, and while there were fewer in 2023, the number was still historically high. In 2022, the number of fire hotspots peaked at 21,217, with a slight decrease to 18,756 in 2023. These figures are still higher than in 2020 and 2021. </p>
+
+  <iframe title="2022 Had the Greatest Number of Forest Fire Hotspots" aria-label="Column Chart" id="datawrapper-chart-Kk0Ul" src="https://datawrapper.dwcdn.net/Kk0Ul/3/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="472" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
+  </script>
+
+<p>Normally, most fires happen in August and September. In 2023, the fires kept burning into October, especially in primary forests. This shift indicates that while overall deforestation is down, forest fires are continuing and may be moving into more sensitive areas of the forest.</p>
+ 
+  <iframe title="August and September are the months with the largest number of fires in the state of Amazonas" aria-label="Column Chart" id="datawrapper-chart-Absds" src="https://datawrapper.dwcdn.net/Absds/2/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="571" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
+  </script>
+
+
+<p>The fires in the metropolitan region are never natural. They are always of human origin.</p>
+
+<p>“It could be someone who threw a cigarette butt on the side of the road, someone who had a barbecue and left the embers, or someone who decided to clear their pasture, and then these ashes, the embers, spread to the forest,” said Joel Bentes, the Superintendent of The Brazilian Institute of Environment and Renewable Natural Resources in Amazonas. IBAMA is responsible for environmental licensing and monitoring activities that harm the environment in federal areas. “And then it encounters a forest that is prone to fires," he said.</p>
+  
+<p>Manaus's population felt the impact of these fires more than usual because the fires spread beyond the traditional deforested areas. The El Niño phenomenon was also a major factor in the intense drought and low water levels. Colonel Francisco Máximo, Executive Secretary of the Civil Defense of Amazonas, responsible for aiding those affected by extreme weather events, said global warming is raising the risk of fires in the region. He said that the hotter, drier, and less humid conditions make the land more vulnerable to fires, particularly in areas that were once flooded but are now dry due to climate change.</p>
+  
+<p>In the Amazon, there is an illegal practice of deforestation and burning the vegetation the following year to plant grass for cattle.</p>
+
+
+</div>
+
   <section id="scrolly-images" class="scrolly-container">
     <div class="sticky-thing">
       <img src="gif.gif">
@@ -174,26 +264,104 @@
     <div class="steps-container">
       <div class="step" id="step1">
         <div>
-          <p>Step one, adjust the CSS at the bottom of this page to change spacing between steps.</p>
-          <p>Here is some more text, in case there are multiple paragraphs.</p>
+          <p>Superintendent Bentes pointed out specific areas affected by this illegal land management, particularly in Apuí, which is a center for deforestation and burning, as well as the region encompassing Apuí, Manicoré, and Humaitá.</p>
         </div>
       </div>
       <div class="step" id="step2">
-        <p>Find the JavaScript code near the bottom to associate each step with an image change.</p>
+        <p>Commander-General Reinaldo Acris Menezes leads the Amazonas Military Fire Department, focusing on civil defense, fire prevention and rescues, and is part of the Brazilian Army. He said there were significant firefighting efforts across 25 municipalities affected by this phenomenon, particularly in the south of Amazonas. He also listed the metropolitan region of Manaus, including Iranduba, Autazes, and Manaquiri, as fire hotspots in 2023, although these areas have not seen as many fires so far this year.</p>
+  
       </div>
       <div class="step" id="step3">
-        <p>By default, the steps are a set width and the text is left-centered. Find the rule in
-          <code>scrolly-styles.css</code> that refers to <code>.step > *</code> to adjust or remove the width, center
-          the text, or change the background color/opacity.</p>
-      </div>
-      <div class="step" id="step4">
-        <p>Step four, lorem ipsum dolor sic amet.</p>
-      </div>
-      <div class="step" id="step5">
-        <p>Step five, lorem ipsum dolor sic amet.</p>
+        <P>The southern areas of Lábrea and Boca do Acre have a lot of deforestation. Superintendent Bentes said deforestation activities are advancing towards Novo Aripuanã, from Humaitá to Canutama and Tapauá, as well as the south of Maués. This means that more towns in the south of Amazonas have joined the list of municipalities with the most deforestation, with the highest number of fires, and the fires have been advancing towards the north of the state. </P>
       </div>
     </div>
   </section>
+  <figcaption>Source: shapefiles from National Institute for Space Research (INPE)
+  </figcaption>
+
+<p></p>
+ 
+  <div class="graphics-container2">
+    <div class="single-graphic2">
+        <img src="zoom2022.png">
+    </div>
+    <div class="single-graphic2">
+        <img src="zoomlines.png">
+    </div>
+</div>
+<figcaption>Source: shapefiles from National Institute for Space Research (INPE)</figcaption>
+
+<P></P>
+<div class="content">
+<p>"This is part of the problem. The large-scale deforestation that occurred in 2021 and 2022 was used for the burnings in 2023," he said.</p>
+<p>The Amazon rainforest, known for its high humidity, experiences natural fires extremely rarely. Even during the dry season, the region's natural moisture levels tend to suppress fires, unless people intervene. According to the Amazon Environmental Research Institute, a research institution with a focus on the Amazon forest, fires in the Amazon result from three main factors, known as the "fire triangle": the dry conditions of the Amazonian "summer" from May to October, abundant dry vegetation, and sources of ignition, such as human activity.</p>
+<p>Many areas of native vegetation, mostly floodplain and igapó forests, have burned. While some upland forests also burned, this was mainly in deforested areas in the south. In the metropolitan region, fires often spread from farms to nearby native vegetation.</p>
+<p>Native vegetation, also named primary or virgin, in the Amazon is the natural, diverse plant life largely untouched by human activity, retaining its original structure and species composition. Secondary or regenerating vegetation grows naturally after primary vegetation is partially or completely removed, whether by humans or natural causes. This secondary growth often includes remnants of the original plants and contributes to ongoing ecological succession. According to IPAM, after a fire, pioneer species that grow better in open spaces take over. With repeated burning, grasses become more prevalent.</p>
+<p>According to Colonel Menezes, the year 2023 saw the worst drought conditions, and forecasts for this year predict an even more severe drought accompanied by intense heat. This combination makes the forest drier and more susceptible to fires. As a result, firefighting efforts have been initiated earlier than last year to prevent extensive forest fires.</p>
+<p>The Amazon summer, starting in the middle of July, is typically when fires begin. However, due to the extreme heat and numerous fires last year, they started the operation in June.</p>
+<p>"We've already brought the operation forward by a month," he said.</p>
+
+<figure>
+  <img
+    src="firefighter3.jpeg">
+  <figcaption>Photo courtesy of Reinaldo Acris Menezes</figcaption>
+</figure>
+
+<h2>Agricultural Practices </h2>
+<p>The increase in fires in the Amazon region is largely attributed to both small-scale and large-scale agricultural practices. Small-scale farmers extensively use fire to clear pastures and fields and rejuvenate the soil, similar to their larger counterparts, according to the Amazon Environmental Research Institute.</p>
+
+<p>Many forest fires are criminal in nature. Illegal land management, which involves land grilling, is rampant. This is a process where farmers artificially inflate the value of land through fraudulent means and illegally occupy or sell public or private lands, often involving deforestation. In Pará, this practice is already common and is now growing even more into Amazonas, particularly in the southern part of the state, according to Superintendent Bentes.</p>
+
+<p>Deforestation is often seen as an investment. The use of fire is an instrument, a method for clearing pasture for livestock farming. A property with a standing forest has low value, but once it is cleared and planted with grass, its value increases significantly.</p>
+
+<p>The agricultural cycle has a large impact on deforestation. Vegetation is cut down and burned to plant grass for cattle, with the ashes helping to fertilize the soil. This cycle is repeated over several years. Initially, the ash fertilizes the soil, but after repeated burnings, the soil starts to degrade. By the fifth year, the soil weakens and stops being productive within 10 to 15 years. This phenomenon has already happened in regions like Rondônia and Mato Grosso, where the soil has degraded to the point that farmers shift to crops like soybeans and corn because the land is no longer suitable for cattle.</p>
+
+<p>The challenge lies in the criminal nature of these fires, where perpetrators sometimes cut down trees and place them on the road, obstructing access for firefighting teams. Aggressive behavior towards the teams necessitates the presence of the military police.</p>
+
+<p>"The fire department cuts down the trees and allows the inspection to pass through," Colonel Menezes said, making it a joint effort involving the military police, civil police, and fire department. “If inspection agencies are attacked, the civil police are present to open an investigation and take action and arrest those people. So, this operation is not easy.”</p>
+
+<p>Superintendent Bentes said the worst air quality days were due to the drying of the Amazon’s organic layer, made up of leaves, fruits, and dead trees. This layer becomes highly flammable, so when fires start in livestock areas, they easily spread into the forest.</p>
+
+<p>Colonel Máximo said fires in Amazonas are not just caused by high temperatures or farmers losing control. The region has vast demographic gaps, leading to overlaps in responsibilities among agencies and federative entities, which have not yet reached a consensus on land ownership.</p>
+
+<p>"There is a conflict, and many people take advantage because there is no clear definition of who is responsible for that land title," he said.</p>
+
+<p>Máximo also expressed concern that many riverside communities lack basic necessities, leading people to engage in harmful practices like cutting down trees or burning land to survive.</p>
+
+<p>"Why are these social issues connected to the problem of fires?" Colonel Máximo asked. "When people lack access to what is considered basic, they often end up engaging in harmful practices."</p>
+
+<p>According to data from INPE using data from the Rural Environmental Registry, fires in unregistered rural areas continued into October 2023.</p>
+
+  <iframe title="Fire Hotspots in Unregistered Rural Areas Continue into October 2023" aria-label="Column Chart" id="datawrapper-chart-Ri1V9" src="https://datawrapper.dwcdn.net/Ri1V9/2/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="535" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
+  </script>
+
+<p>The number of fire hotspots in registered rural areas, categorized by the Rural Environmental Registry, declined in 2023, suggesting that registration and regulation may help reduce fire incidents.</p>
+
+  <iframe title="Fire Hotspots in Registered Rural Areas Declined in 2023" aria-label="Column Chart" id="datawrapper-chart-cGPWb" src="https://datawrapper.dwcdn.net/cGPWb/3/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="528" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
+  </script>
+
+<h2>Economic Hardships</h2>
+
+<p>Colonel Máximo said the behavior of rivers is influenced by high temperatures and low rainfall, which affect local agriculture. When rivers, particularly in floodplain areas, drop to significantly lower levels, the fertile soil left behind by the receding waters is often accompanied by debris such as tree trunks and vegetation, which can obstruct farming activities. To clear these areas quickly before the river rises again, locals often resort to burning.</p>
+
+<p>"It’s not just because the river is low that we have fires, but it does contribute, particularly when temperatures are high," he explained.</p>
+
+<p>The severe drought accompanied by intense heat has impacted transportation and supply chains. Superintendent Bentes said because ships ran aground, agricultural food production didn’t arrive from some states, mainly from coming to Rondônia.</p>
+
+<p>“There were a series of other consequences: places without water, places without food, a series of consequences that are a bit beyond our control, but they happened,” he said.</p>
+
+<p>Vania Lima, who worked as a waitress at a riverside restaurant, described how the severe drought affected the floating establishment, which is built on wooden logs and açaí “floats” or plastic bottles.</p>
+
+<p>“No one predicted this phenomenon, and we ended up in a very precarious situation because of the floating restaurant,” Lima said. “There wasn't any water; it dried up a lot and broke the dock, so no boats could arrive, leaving us totally isolated.”</p>
+
+<p>Lima was out of work for three months because the restaurant became inaccessible.</p>
+
+<p>“It’s really muddy, so much so that when you step in it, you sink, and the river becomes very precarious,” she said.</p>
+
+<p>“It was a really sad scene to see,” she said. “And people are saying this year is going to be worse.”</p>
+
+</div>
+
   <div class="graphics-container">
     <div class="single-graphic">
         <img src="dorocheia.jpeg">
@@ -203,43 +371,81 @@
         <img src="doro_seca3.jpeg">
         <figcaption>Pictures taken by Tiara throughout the trip</figcaption>
     </div>
-   
-</div>
-  <div class="content">
-    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem
-      aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo
-      enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui
-      ratione voluptatem sequi nesciunt.</p>
-    <figure>
-      <img
-        src="https://static01.nyt.com/images/2024/02/01/multimedia/01eu-hungary-orban-2-ghkw/01eu-hungary-orban-2-ghkw-superJumbo.jpg?quality=75&auto=webp">
-      <figcaption>This is an image caption</figcaption>
-    </figure>
-    <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non
-      numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima
-      veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?
-    </p>
+  </div>
+  <p></p>
+<div class="content">
+  <p>Francisco Barreto, known as Captain Star, has spent 40 years organizing ecological tourism in the Manaus region. He said that during the drought, floating structures such as restaurants and fishing docks must rent push boats to tow them near the Meeting of the Waters, a natural phenomenon where two differently colored Amazon tributaries flow side by side without mixing. This area is a significant attraction for tourists.</p>
+
+  <p>"Indigenous tribes come out and set up makeshift shelters, bringing their people to perform rituals," Captain Star said, explaining how these communities adapt to maintain tourism during the drought, despite the changing water levels.</p>
+  
+  <p>“We keep control of the vessels, and the floating structure owners stay alert. Every day, they check the canal to see if they need to move,” he said. "This coordination involves everyone, including restaurants and pirarucu fishing operators, to make sure no one gets stuck and unable to work."</p>
+  
+  <p>He said the main challenge arises when the river dries up to the point where it becomes impossible to navigate the igarapé and igapó areas. The smoke from forest fires during the dry season creates significant difficulties.</p>
+  
+  <p>"At times, you’d look at the sky, and it was all gray," he said. The smoke reduced visibility for boats and worsened air quality, forcing many people to wear masks. Last year, these conditions led to a decline in tourist visits.</p>
+  
+  <p>Captain Star said tours continue in parts of the river that remain navigable.</p>
+  
+  <p>"Many people say they won’t go to Manaus because they think the Meeting of the Waters is dry, which can only happen by the will of God because it never dries up," he said.</p>
+
+  <h2>Fighting Forest Fires</h2>
+
+<p>Colonel Menezes, from the firefighting department, said that the firefighting department started the fire mitigation operation on June 3rd and called it Operation Aceiro, which is a form of firefighting. He said a fire occurrence can involve several fire hotspots. In 45 days of operation in 2024, they have had more than 600 occurrences and more than 1,200 fires fought.</p>
+
+<p>In the arc of fire, distances are vast, and there are no proper roads. To leave Manaus, the capital city of Amazonas, and go to Humaitá, the fire troops must take a ferry to cross with the vehicles, and it is almost a thousand kilometers to get there.</p>
+
+<p>The first troop traveled by van, taking more than a day to reach the destination. Subsequent exchanges were made by plane or boat. Depending on the final destination, it is necessary to go by boat because there's no airport. Each municipality receives a pickup truck equipped with a 400-liter water tank and a 60-meter hose. Typically, there are five to six military firefighters, plus 17 local volunteer firefighters, and some military personnel from the national force stationed in each municipality, with a total of 20 to 30 firefighters per municipality spread across the southern part of Amazonas.</p>
+
   </div>
   <div class="full-width">
     <figure>
       <img
-        src="https://static01.nyt.com/images/2024/02/01/multimedia/01eu-hungary-orban-2-ghkw/01eu-hungary-orban-2-ghkw-superJumbo.jpg?quality=75&auto=webp">
-      <figcaption>This is another image caption, but this time it's a full-width image</figcaption>
+        src="firefighter2.jpeg">
+      <figcaption>Photo courtesy of Reinaldo Acris Menezes</figcaption>
     </figure>
   </div>
+
   <div class="content">
-    <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque
-      corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa
-      qui officia deserunt mollitia animi, id est laborum et dolorum fuga.</p>
-    <p>Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio
-      cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor
-      repellendus.</p>
+    <p>Colonel Máximo said there are immense challenges in combating forest fires in the Amazonas region. He said that, despite advancements in real-time monitoring, the infrastructure to address these fires remains inadequate. Reaching fire sites is challenging due to logistical issues, lack of landing spots or refueling stations, and the fact that fire starters often act at night, making them hard to catch.</p>
+
+    <p>In the past three years, the state has tried to mitigate the impact of forest fires through initiatives aimed at reducing the dependency on fire for land clearing.</p>
+    
+    <p>"We identified areas within conservation units where residents were already using these areas for farming,” said Gleidson Aranda, head of the Department of Climate Change and Conservation Units, responsible for preventing and controlling deforestation and fires in the Amazon.</p>
+    
+    <p>He described how the project aimed to show local farmers they could prepare the land for planting without resorting to burning, for example by using plant material could help sustain soil quality.</p>
+    
+    <p>"Something that is known by the populations themselves is that burning accelerates the development of the plant, and we tried to show other ways of production," Aranda said. "The cassava production in both areas was the same, it was equivalent. This demonstrated that the no-burn system did not result in a loss of production.”</p>
+    
+    <p>The state has also been trying to introduce small-scale mechanization tools, such as rotary hoes and brush cutters, that can help manage the land without fire.</p>
+    
+    <p>Aranda explained that the bioeconomy, which involves using biological resources sustainably for economic activities, within conservation areas is crucial for forest preservation. When local communities see that these areas generate income, they become more committed to protecting the forest. They are also more likely to report illegal activities, which helps manage land use and prevent fires from spreading beyond cleared areas.</p>
+    
+    <p>"We have to show the world that the forest standing generates income," Aranda said. “And there is a very large population here. We cannot look at the Amazon and imagine that it is just a vast expanse of green forest because we have a huge population surviving, living and generating income within the conservation units.”</p>
+   
+    <h2>Environmental Challenges</h2>
+    
+    <p>To effectively combat the climate crisis, Superintendent Bentes believes municipal environmental departments need to be strengthened with fire brigades equipped with necessary tools, such as water tanks, and specialized teams to fight forest fires.</p>
+    
+    <p>"The municipal environmental or civil defense departments can no longer take care of just what they have been taking care of for the last 30 years. Now they have to take care of forest fires. It is a reality," Superintendent Bentes said.</p>
+    
+    <p>Some municipalities are particularly affected by fires. In Apuí, the environmental department has fewer than five employees. Colonel Menezes said if conditions worsen significantly, as they have in the past, and the Amazon experiences extensive burning, the Military Fire Department would need to at least triple or quadruple the current resources.</p>
+    
+    <p>"We have two vehicles, but it would be beneficial to have six vehicles there," he said. "Instead of having twenty agents, it would be better to have forty or sixty."</p>
+    
+    <p>Commander Josélio da Silva Monteiro, of the Amazonas Military Fire Department, explains that fighting fires in the Amazon is particularly challenging due to the "complexity of the Amazon" and the high costs associated with operating there. This complexity affects not just firefighters but any activity in the region. The costs are driven by great distances, air transportation, which is expensive, river transportation, which takes a long time, and the lack of well-preserved roads. Cities are primarily connected by river and air, making maintenance difficult.</p>
+    
+    <p>"To maintain a vehicle in a remote city, you have to take it to a capital in another state for repairs," he said, as there are no specific workshops available locally. “Effective firefighting in the Amazon requires organization, planning, and anticipation of potential consequences due to these logistical challenges.”</p>
+    
+    <p>Colonel Máximo recalled that last year, August 16th or 18th was considered the hottest day of the year historically, and this trend is likely to continue this year, further increasing the occurrence of hot spots and fires in the region.</p>
+    
+    <p>"Our biggest challenge now is to work on preparing and adapting the populations to face these extreme weather conditions," he said.</p>
+    
+    <p>In 2024, the river's low water level is expected to be quite severe, potentially even worse than last year, with significant drying of the rivers. Despite preventive measures by the fire department and other agencies, the fires are also expected to be severe. Residents of Manaus are already experiencing the smoke from these fires, seeing it in the air and smelling it around them.</p>
+    
   </div>
   <div class="footer">
     <div class="content">
-      <p>You can find the code for this template <a href="https://github.com/jsoma/page-templates/">here</a>. Delete
-        these lines
-        when you use it, and don't forget to change the <code>title</code> tag!!!</p>
+      <p>You can find more of my stories h<a href="https://www.renatadaou.com/">here</a>.</p>
     </div>
   </div>
 
